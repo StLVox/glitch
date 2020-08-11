@@ -6,8 +6,8 @@ const { TOKEN, PREFIX } = require("./config.json")
 
 //CLIENT EVENTS
 client.on("ready", () => {
-  console.log('Ready to play song | Bot created by CTK WARRIOR')
-  client.user.setActivity("x!help | Musix")
+  console.log('Ready')
+  client.user.setActivity("!help | Made By StLVox")
 })
 
 client.on("warn", info => console.log(info));
