@@ -12,7 +12,7 @@ let embed = new MessageEmbed()
     if (!song) {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
-      embed.setAuthor("Oh! It Looks Like I've Ran Out Of Songs To Play!")
+      embed.setAuthor("End Of Queue! To Play More Songs Type !play (url/text)")
       return queue.textChannel
         .send(embed)
         .catch(console.error);
