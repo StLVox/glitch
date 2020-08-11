@@ -26,7 +26,7 @@ let embed = new MessageEmbed()
     const serverQueue = message.client.queue.get(message.guild.id);
 const vote = message.client.vote.get(message.guild.id)
     if (!serverQueue) {
-      embed.setAuthor("There is nothing playing that i could skip")
+      embed.setAuthor("Sorry! I Cant Skip This Song Because There Is No Other Song In The Queue!")
       return message.channel.send(embed);
     }
     

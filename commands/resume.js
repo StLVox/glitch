@@ -26,7 +26,7 @@ module.exports = {
    embed.setThumbnail(client.user.displayAvatarURL())
   return message.channel.send(embed)
  }
-    embed.setDescription("There is nothing paused that i can resume")
+    embed.setDescription("Sorry! I Cant Resume Any Song Because There Is None Paused!")
     message.channel.send(embed)
     
   }
