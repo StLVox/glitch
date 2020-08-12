@@ -12,7 +12,7 @@ module.exports = {
     .setColor(COLOR)
     .setThumbnail(client.user.displayAvatarURL())
     .setAuthor(`STATS AND INFORMATION`, client.user.displayAvatarURL())
-    .setDescription(`My name is **${client.user.username}** and My work is to play Music`)
+    .setDescription(`Made By StLVox!`)
     .addField("SERVERS", client.guilds.cache.size, true)
     .addField("PRESENCE", client.user.presence.activities[0].name, true)
     .addField("ID", client.user.id, true)

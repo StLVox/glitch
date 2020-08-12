@@ -12,7 +12,7 @@ let embed = new MessageEmbed()
     if (!song) {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
-      embed.setAuthor("End Of Queue! To Play More Songs Type !play (url/text)")
+      embed.setAuthor("MUSIC QUEUE IS ENDED NOW :/")
       return queue.textChannel
         .send(embed)
         .catch(console.error);
@@ -29,7 +29,7 @@ let embed = new MessageEmbed()
       }
 
       if (error.message.includes === "copyright") {
-        return message.channel.send("Uh Oh! I've Ran Into A Problem! This Song Is Copyrighted!");
+        return message.channel.send("THIS VIDEO CONTAINS COPYRIGHT CONTENT");
       } else {
         console.error(error);
       }
@@ -55,6 +55,6 @@ embed.setAuthor("Started Playing Song", message.client.user.displayAvatarURL())
     
     queue.textChannel
       .send(embed)
-      .catch(err => message.channel.send("Sorry! Im Unable To Play That Song!"));
+      .catch(err => message.channel.send("UNABLE TO PLAY SONG"));
   }
 };

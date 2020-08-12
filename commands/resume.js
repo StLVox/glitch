@@ -14,7 +14,7 @@ module.exports = {
       
     if (!channel) {
       //IF AUTHOR IS NOT IN VOICE CHANNEL
-      embed.setAuthor("Sorry But You Need To Be In A Voice Channel To Do That!")
+      embed.setAuthor("Sorry, you need to be in a voice channel to use that command!")
       return message.channel.send(embed);
     }
 
@@ -26,7 +26,7 @@ module.exports = {
    embed.setThumbnail(client.user.displayAvatarURL())
   return message.channel.send(embed)
  }
-    embed.setDescription("Sorry! I Cant Resume Any Song Because There Is None Paused!")
+    embed.setDescription("There is nothing paused that i can resume")
     message.channel.send(embed)
     
   }
