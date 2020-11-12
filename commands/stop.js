@@ -18,7 +18,7 @@ let embed = new MessageEmbed()
       
     if (!channel) {
       //IF AUTHOR IS NOT IN VOICE CHANNEL
-      embed.setAuthor("Sorry But You Need To Be In A Voice Channel To Do That!")
+      embed.setAuthor("Sorry, you need to be in a voice channel to use that command!")
       return message.channel.send(embed);
     }
 

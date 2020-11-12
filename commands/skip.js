@@ -20,13 +20,13 @@ let embed = new MessageEmbed()
        
     if (!channel) {
       //IF AUTHOR IS NOT IN VOICE CHANNEL
-      embed.setAuthor("Sorry But You Need To Be In A Voice Channel To Do That!")
+      embed.setAuthor("Sorry, you need to be in a voice channel to use that command!")
       return message.channel.send(embed);
     }
     const serverQueue = message.client.queue.get(message.guild.id);
 const vote = message.client.vote.get(message.guild.id)
     if (!serverQueue) {
-      embed.setAuthor("Sorry! I Cant Skip This Song Because There Is No Other Song In The Queue!")
+      embed.setAuthor("There is nothing playing that i could skip")
       return message.channel.send(embed);
     }
     

@@ -7,7 +7,7 @@ module.exports = {
     let embed = new MessageEmbed().setColor(COLOR);
     const { channel } = message.member.voice;
     if (!channel) {
-      embed.setAuthor("Sorry But You Need To Be In A Voice Channel To Do That!");
+      embed.setAuthor("Sorry, you need to be in a voice channel to use that command!");
       return message.channe.send(embed);
     }
 

@@ -18,7 +18,7 @@ module.exports = {
     const { channel } = message.member.voice;
     if (!channel) {
       //IF AUTHOR IS NOT IN VOICE CHANNEL
-      embed.setAuthor("Sorry But You Need To Be In A Voice Channel To Do That!")
+      embed.setAuthor("YOU NEED TO BE IN VOICE CHANNEL :/")
       return message.channel.send(embed);
     }
     
@@ -46,7 +46,7 @@ module.exports = {
     
     serverQueue.volume = args[0]
     serverQueue.connection.dispatcher.setVolumeLogarithmic(args[0] / 100)
-    embed.setDescription(`Set Volume to ${args[0]} Succesfully!`)
+    embed.setDescription(`Seted Volume to ${args[0]}`)
     embed.setThumbnail(client.user.displayAvatarURL())
     message.channel.send(embed)
     

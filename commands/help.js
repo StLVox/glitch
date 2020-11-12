@@ -11,7 +11,7 @@ let embed = new MessageEmbed()
 .setAuthor("HELP SECTION", client.user.displayAvatarURL())
 .setThumbnail(client.user.displayAvatarURL())
 .setColor(COLOR)
-.setDescription(`These are the command ${client.user.username} Bot, INVITE ME - LINK`)
+.setDescription(`These are the commands ${client.user.username} Bot,`)
 let command = readdirSync("./commands")    
 
 let i;
